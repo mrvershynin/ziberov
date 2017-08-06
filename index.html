@@ -6,20 +6,71 @@
 
 	<title>Home</title>
 
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/menu-button.css" rel="stylesheet">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 
 </head>
 <body>
 	<div class="container-fluid">
 		<div class="row">
-			<img src="images/logo.png" alt="">
+		<header>
+			<img class="logo" src="images/logo.png" alt="">
+			<div class="menu-mob hidden-sm hidden-md hidden-lg hidden-xl">
+				<button class="cmn-toggle-switch cmn-toggle-switch__htx">
+					<span>toggle menu</span>
+				</button>
+      		</div>
+		</header>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 hidden-xs">
+				<ul class="menu">
+			      <li class="active"><a href="#">Home</a></li>
+			      <li><a href="#">Sobre</a></li>
+			      <li><a href="#">Nossos serviços</a></li>
+			      <li><a href="#">Nossos clientes</a></li>
+			      <li><a href="#">Noticias</a></li>
+			      <li><a href="#">Contato</a></li>
+		   		</ul>
+			</div>
 		</div>
 	</div>	
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6">
+				<h2>About</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus velit nam unde nisi consequuntur, maiores nesciunt rem laborum ipsa, repellat obcaecati magnam provident tempora facilis ab dignissimos tempore at, ad!</p>
+			</div>
+			<div class="col-xs-12 col-sm-6">
+				<img slass=".img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoCo-vMMnSmNWxzsyeJiuht4UArP0xfi14WZyTUr3B_ebfJTyajw" alt="">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<h1>Прикольная штука</h1>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-6">
+            <h5>&copy Untitled. All rights reserved.</h5>
+           </div>
+           <div class="col-xs-6">
+           	<h5>Social, tel. numver..</h5>
+           </div>
+		</div>
+		</div>
+	</div>
+	
 
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/js.js"></script>
 </body>
 </html>
