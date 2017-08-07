@@ -8,14 +8,9 @@
 	padding: 0px 20px;
 	border-right: 1px solid;
 }
-.menu > li:nth-child(5) {
+.menu > li:nth-child(6) {
 	border-right: none;
 }
 .logo {
 	float: left;
-}
-.footer {
-	position: absolute;
-	bottom: 10px;
-	width: 100%;
 }
