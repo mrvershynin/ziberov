@@ -1,3 +1,4 @@
+//Animation for Button
 (function() {
 
   "use strict";
@@ -17,3 +18,33 @@
   }
 
 })();
+
+//Animation for mobile menu
+var mmenu='close';
+
+$('document').ready(function(){
+  $('.cmn-toggle-switch').on('click', showMmenu);
+});
+
+function showMmenu (){
+  if (mmenu == 'close') {
+    $('.mmenu').animate({
+    'top': '0'
+  },1000);
+  mmenu = 'open';
+
+  $('.mmenu-menu').fadeOut(1000);
+  $('.mmenu-close').fadeIn(1000);
+}
+
+else {
+  
+  $('.mmenu').animate({
+    'top': '-30%'
+  },1000);
+  mmenu = 'close';
+  $('.mmenu-menu').fadeIn(1000);
+  $('.mmenu-close').fadeOut(1000);
+}
+}
+

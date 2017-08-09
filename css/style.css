@@ -1,6 +1,10 @@
 html, body {
 	height: 100%;
 }
+.mmenu {
+	position: fixed;
+	top: -30%;
+}
 .menu {
 	list-style-type: none;
 	text-align: center;
