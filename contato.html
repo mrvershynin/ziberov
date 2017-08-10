@@ -18,7 +18,7 @@
 		<div class="container-fluid">
 		<div class="row">
 		<header>
-			<img class="logo" src="images/logo.png" alt="">
+		<a href="index.html"><img class="logo" src="images/logo.png" alt=""></a>
 			<div class="menu-mob hidden-sm hidden-md hidden-lg hidden-xl">
 				<button class="cmn-toggle-switch cmn-toggle-switch__htx">
 					<span>toggle menu</span>
@@ -26,7 +26,9 @@
       		</div>
 		</header>
 		</div>
-		<div class="row">
+		</div>
+		<div class="main">
+			<div class="row">
 			<div class="col-xs-12 hidden-sm hidden-md hidden-lg">
 				<div class="mmenu">
 				<ul>
@@ -50,7 +52,7 @@
 		   		</ul>
 			</div>
 		</div>
-	</div>	
+		
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-xs-12">
@@ -60,46 +62,66 @@
 		<div class="row">
 			<div class="col-xs-12 col-sm-8">
 				<p>Envie-nos uma mensagem que iremos entrar em contato para marcar um horário.</p>
-				<div class="col-xs-12">
+				<div id="form" class="col-xs-12">
 					<form>
-						<div class="col-xs-12 col-sm-6">
+						<div id="form-left" class="col-xs-12 col-sm-6">
 							<input type="text" placeholder="Nome"> </br>
 							<input type="email" placeholder="Email"> </br>
 							<input type="tel" placeholder="Telefone">
 						</div>
-						<div class="col-xs-12 col-sm-6">
-							<textarea placeholder="WRITE MESSAGE..." rows="5"></textarea> </br>
+						<div id="form-right" class="col-xs-12 col-sm-6">
+							<textarea placeholder="WRITE MESSAGE..." rows="4"></textarea> </br>
 							<button type="button">Enviar</button>
 						</div>
 					</form>
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-4">
-				<ul>
-					<li><i class="fa fa-envelope-o fa-2x""></i> utec.engenharia@hotmail.com</li>
-					<li><i class="fa fa-phone fa-2x"></i> +55 (34) 99264-4381 </br>
-														  +55 (34) 98828-9870</li>
-					<li><i class="fa fa-instagram fa-2x"></i> utec.engenharia</li>
-					<li><i class="fa fa-facebook-official fa-2x"></i> @utec.engenharia</li>
-					<li><i class="fa fa-map-marker fa-2x"></i> Uberlandia-MG-Brasil</li>
-					<li><i class="fa fa-youtube fa-2x"></i> Youtube</li>
-				</ul>
+				<table class="social">
+					<tr>
+						<td><i class="fa fa-envelope-o fa-2x""></i></td>
+						<td>utec.engenharia@hotmail.com</td>
+					</tr>
+					<tr>
+						<td rowspan="2"><i class="fa fa-phone fa-2x"></i></td>
+						<td>+55 (34) 99264-4381</td>
+						<tr><td>+55 (34) 98828-9870</td></tr>
+					</tr>
+					<tr>
+						<td><i class="fa fa-instagram fa-2x"></i></td>
+						<td>utec.engenharia</td>
+					</tr>
+					<tr>
+						<td><i class="fa fa-facebook-official fa-2x"></i></td>
+						<td>@utec.engenharia</td>
+					</tr>
+					<tr>
+						<td><i class="fa fa-map-marker fa-2x"></i></td>
+						<td>Uberlandia-MG-Brasil</td>
+					</tr>
+					<tr>
+						<td><i class="fa fa-youtube fa-2x"></td>
+						<td>Youtube</td>
+					</tr>
+				</table>
 			</div>
 		</div>
 	</div>
 	</div>
-	<div class="footer">
+		</div>
+		
+	<footer>
 		<div class="container-fluid">
-			<div class="row">
-				<div class="col-xs-6">
-	            <h5>&copy Untitled. All rights reserved.</h5>
-	           </div>
-	           <div class="col-xs-6">
-	           	<h5>Social, tel. numver..</h5>
-	           </div>
-			</div>
+		<div class="row">
+			<div class="col-xs-6 text-left">
+            <h5>&copy Untitled. All rights reserved.</h5>
+           </div>
+           <div class="col-xs-6 text-right">
+           	<h5>Social, tel. numver..</h5>
+           </div>
 		</div>
-	</div>
+		</div>
+	</footer>
 </div>
 	
 
