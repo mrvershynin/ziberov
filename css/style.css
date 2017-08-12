@@ -5,7 +5,6 @@ header {
 	width: 100%;
 	display: block;
 	padding: 0px 10%;
-	margin-bottom: 20px;
 	padding-bottom: 10px;
 	border-bottom: 2px solid grey;
 }
@@ -14,22 +13,32 @@ header {
 	margin: 0px 10%;
 	font-size: 17px;
 }
-.mmenu {
-	position: fixed;
-	top: -30%;
+.lang {
+	float: right;
+	display: inline-block;
+	list-style-type: none;
+	position: relative;
+	top: 50px; 
 }
+.lang > li{
+	display: inline-block;
+}
+
 .menu {
 	list-style-type: none;
 	text-align: center;
 	margin: 0px;
+	margin-top: 20px;
 	padding-bottom: 20px;
+	padding-right: 0px !important;
 	font-size: 16px;
+	-webkit-padding-start: 0px;
 }
 .menu > li {
 	display: inline-block;
 	border-right: 1px solid;
 }
-.menu > li:nth-child(6) {
+.menu > li:nth-child(7) {
 	border-right: none;
 }
 .menu > li > a {
@@ -84,6 +93,13 @@ input:focus, textarea:focus {
 }
 #form-left, #form-right {
 	padding: 0px 5px 0px 0px;
+}
+.navbar-inverse, .navbar-collapse {
+	background-color: white !important;
+	border-color: white !important;
+	min-height: 0px !important;
+    margin-bottom: 0px !important;
+    border: none !important;
 }
 button {
 	float: right;

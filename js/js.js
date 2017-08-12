@@ -20,6 +20,7 @@
 })();
 
 //Animation for mobile menu
+/*
 var mmenu='close';
 
 $('document').ready(function(){
@@ -47,4 +48,4 @@ else {
   $('.mmenu-close').fadeOut(1000);
 }
 }
-
+*/
