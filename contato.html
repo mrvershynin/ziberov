@@ -85,16 +85,17 @@
                             <div id="form" class="col-xs-12 col-sm-8">
                                 <form>
                                     <div id="form-left" class="col-xs-12 col-sm-6">
-                                        <input type="text" placeholder="Nome"> </br>
-                                        <input type="email" placeholder="Email"> </br>
-                                        <input type="tel" placeholder="Telefone">
+                                        <input type="text" id="name" placeholder="Nome"> </br>
+                                        <input type="email" id="email" placeholder="Email"> </br>
+                                        <input type="tel" id="telephone" placeholder="Telefone">
                                     </div>
                                     <div id="form-right" class="col-xs-12 col-sm-6">
-                                        <textarea placeholder="Mensagem..." rows="4"></textarea>
+                                        <textarea name="message" id="comment" placeholder="Mensagem..." rows="4"></textarea>
                                         </br>
-                                        <button type="button">Enviar</button>
+                                        <button type="button" class="send">Enviar</button>
                                     </div>
                                 </form>
+                                <h4 id="send-res"></h4>
                             </div>
                             <div class="col-xs-12 col-sm-4">
                                 <table class="social">
@@ -103,7 +104,7 @@
                                         <td><a href="mailto:utec.engenharia@hotmail.com ">utec.engenharia@hotmail.com</a></td>
                                     </tr>
                                     <tr>
-                                        <td rowspan="2 "><i class="fa fa-phone fa-2x "></i></td>
+                                        <td rowspan="2"><i class="fa fa-phone fa-2x "></i></td>
                                         <td>+55 (34) 99264-4381</td>
                                         <tr>
                                             <td>+55 (34) 98828-9870</td>

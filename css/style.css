@@ -139,6 +139,9 @@ input:focus, textarea:focus {
 button {
 	float: right;
 }
+#send-res {
+	height: 14px;
+}
 section {
 	padding: 5px 0px;
 	background-color: #555;
