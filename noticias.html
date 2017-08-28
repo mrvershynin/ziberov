@@ -21,7 +21,7 @@
                         <div class="hidden-xs">
                             <ul class="lang">
                                 <li><a href=""><img src="images/Brazil.png" alt=""></a></li>
-                                <li><a href=""><img src="images/Spain.png" alt=""></a></li>
+                                <li><a href=""><img src="images/Russia.png" alt=""></a></li>
                                 <li><a href=""><img src="images/United-Kingdom.png" alt=""></a></li>
                             </ul>
                         </div>
@@ -40,14 +40,13 @@
                                                 <li><a href="index.html">Home</a></li>
                                                 <li><a href="sobre.html">Sobre</a></li>
                                                 <li><a href="servicos.html">Serviços</a></li>
-                                                <li><a href="clientes.html">Clientes</a></li>
-                                                <li><a href="parceiros.html">Parceiros</a></li>
+                                                <li><a href="projetos.html">Projetos</a></li>
                                                 <li class="active"><a href="noticias.html">Noticias</a></li>
                                                 <li><a href="contato.html">Contato</a></li>
                                             </ul>
                                             <ul class="list-inline">
                                                 <li><a href=""><img src="images/Brazil.png" alt=""></a></li>
-                                                <li><a href=""><img src="images/Spain.png" alt=""></a></li>
+                                                <li><a href=""><img src="images/Russia.png" alt=""></a></li>
                                                 <li><a href=""><img src="images/United-Kingdom.png" alt=""></a></li>
                                             </ul>
                                         </div>
@@ -65,8 +64,7 @@
                             <li><a href="index.html">Home</a></li>
                             <li><a href="sobre.html">Sobre</a></li>
                             <li><a href="servicos.html">Serviços</a></li>
-                            <li><a href="clientes.html">Clientes</a></li>
-                            <li><a href="parceiros.html">Parceiros</a></li>
+                            <li><a href="projetos.html">Projetos</a></li>
                             <li class="active"><a href="noticias.html">Noticias</a></li>
                             <li><a href="contato.html">Contato</a></li>
                         </ul>
@@ -78,43 +76,88 @@
                     </div>
                     <div class="row">
                         <div class="container-fluid news">
-                            <div class="col-xs-12">
-                                <caption>UTEC Engenharia atuou como um patrocinador do POSMEC-UFU-2017</caption>
-                            </div>
                             <div class="col-xs-12 col-sm-3">
                                 <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwOP5HPtDmPLNytOKY8IcJu9EbZv_ZMFlFSJ9n68MY_rve6AouUw" alt="">
                             </div>
                             <div class="col-xs-12 col-sm-9">
+                                <div class="caption">UTEC Engenharia atuou como um patrocinador do POSMEC-UFU-2017</div>
                                 <p>O simpósio anual POSMEC dos alunos do programa de Pós-Graduação em Engenharia Mecânica da Universidade Federal de Uberlândia teve início em 1986.</p>
-                                <button type="button">Leia mais</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="container-fluid news">
-                            <div class="col-xs-12">
-                                <caption>UTEC Engenharia atuou como um patrocinador do POSMEC-UFU-2017</caption>
-                            </div>
-                            <div class="col-xs-12 col-sm-3">
-                                <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwOP5HPtDmPLNytOKY8IcJu9EbZv_ZMFlFSJ9n68MY_rve6AouUw" alt="">
-                            </div>
-                            <div class="col-xs-12 col-sm-9">
-                                <p>O simpósio anual POSMEC dos alunos do programa de Pós-Graduação em Engenharia Mecânica da Universidade Federal de Uberlândia teve início em 1986.</p>
-                                <button type="button">Leia mais</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="container-fluid news">
-                            <div class="col-xs-12">
-                                <caption>UTEC Engenharia atuou como um patrocinador do POSMEC-UFU-2017</caption>
-                            </div>
-                            <div class="col-xs-12 col-sm-3">
-                                <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwOP5HPtDmPLNytOKY8IcJu9EbZv_ZMFlFSJ9n68MY_rve6AouUw" alt="">
-                            </div>
-                            <div class="col-xs-12 col-sm-9">
-                                <p>O simpósio anual POSMEC dos alunos do programa de Pós-Graduação em Engenharia Mecânica da Universidade Federal de Uberlândia teve início em 1986.</p>
-                                <button type="button">Leia mais</button>
+
+
+
+                                <div class="row1">
+  <div class="column">
+    <img src="images/Home_logo.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="images/IIW.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="images/Math_works.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="images/Serviços.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+        <img src="images/Home_logo.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+        <img src="images/IIW.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+        <img src="images/Math_works.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+        <img src="images/Serviços.png" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <div class="column">
+      <img class="demo" src="images/Home_logo.png" onclick="currentSlide(1)" alt="Nature">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="images/IIW.png" onclick="currentSlide(2)" alt="Trolltunga">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="images/Math_works.png" onclick="currentSlide(3)" alt="Mountains">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="images/Serviços.png" onclick="currentSlide(4)" alt="Lights">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+                                <a href="#text" data-toggle="collapse">Leia mais</a>
+                                <div id="text" class="collapse">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </div>
                             </div>
                         </div>
                     </div>
