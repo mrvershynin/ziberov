@@ -12,6 +12,13 @@ p {
 	text-align: justify;
 	text-indent: 20px;
 }
+.title {
+	font-size: 20px;
+	font-weight: bold;
+}
+.caption {
+	font-size: 15px;
+}
 h6 {
 	position: relative;
 	display: block;
@@ -71,7 +78,7 @@ li.active {
 	display: block;
 	font-size: 18px;
 	color: #999;
-	transition: 0.5s linear;
+	transition: 0.2s linear;
 }
 .menu > li > a:hover {
 	color: #333;
@@ -131,7 +138,7 @@ footer	{
 .social > a {
 	display: inline-block;
 	color: #666;
-	transition: 0.5s linear;
+	transition: 0.3s linear;
 	margin: 5px 5px;
 }
 .social > a:hover {
@@ -177,8 +184,8 @@ section {
 	letter-spacing: 2px;
 	margin-bottom: 20px;
 }
-.caption {
-	font-size: 20px;
+.heading {
+	font-size: 22px;
 	font-weight: 600;
 	margin-bottom: 5px;
 }
@@ -186,7 +193,7 @@ section {
 	background-color: #d5d4d1;
 	margin: 0px 15px 5px 15px !important;
 	padding: 10px;
-	margin-top: 5px !important;
+	margin-top: 10px !important;
 	margin-bottom: 5px !important;
 }
 .non-par {
