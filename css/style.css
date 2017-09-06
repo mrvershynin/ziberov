@@ -188,6 +188,8 @@ section {
 	font-size: 22px;
 	font-weight: 600;
 	margin-bottom: 5px;
+	padding-top: 15px;
+	padding-left: 15px;
 }
 .news {
 	background-color: #d5d4d1;
@@ -198,6 +200,9 @@ section {
 }
 .non-par {
 	text-indent: 0px;
+}
+.in {
+	margin-top: 45px;
 }
 @media screen and (max-width: 768px) {
 	header {
@@ -219,5 +224,8 @@ section {
 	}
 	#img {
 		width: 100%;
+	}
+	.in {
+		margin-top: 0px;
 	}
 }
