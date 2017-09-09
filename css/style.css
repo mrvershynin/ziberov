@@ -6,7 +6,7 @@ header {
 	display: block;
 	margin: 0px 10%;
 	padding-bottom: 10px;
-	border-bottom: 1px solid grey;
+	
 }
 p {
 	text-align: justify;
@@ -184,6 +184,10 @@ section {
 	letter-spacing: 2px;
 	margin-bottom: 20px;
 }
+.border {
+	display: block;
+	border-top: 1px solid gray;
+}
 .heading {
 	font-size: 22px;
 	font-weight: 600;
@@ -206,13 +210,16 @@ section {
 }
 @media screen and (max-width: 768px) {
 	header {
-		padding: 0px 3px;
+		padding: 0px 0px;
 		width: 100%;
 		margin: 0;
 	}
 	.news {
 		padding: 5px !important;
 		margin: 10px 5px 10px 5px !important;
+	}
+	.border	{
+		width: 100%;
 	}
 	footer {
 		padding: 0px 3px;

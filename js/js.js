@@ -20,6 +20,7 @@
 })();
 
 $('document').ready(function() {
+    $('#footer').load('footer.html');
     $('.send').on('click', validateForm);
 
     //SEND EMAIL IN DESKTOP VERSION
@@ -56,6 +57,8 @@ $('document').ready(function() {
         }
     }
 });
+
+
 
 
 
