@@ -201,7 +201,7 @@ section {
 .non-par {
 	text-indent: 0px;
 }
-.in {
+.inn {
 	margin-top: 45px;
 }
 @media screen and (max-width: 768px) {
@@ -225,7 +225,7 @@ section {
 	#img {
 		width: 100%;
 	}
-	.in {
+	.inn {
 		margin-top: 0px;
 	}
 }
