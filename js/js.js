@@ -21,6 +21,7 @@
 
 $('document').ready(function() {
     $('#footer').load('footer.html');
+    $('#header').load('header.html');
     $('.send').on('click', validateForm);
 
     //SEND EMAIL IN DESKTOP VERSION
