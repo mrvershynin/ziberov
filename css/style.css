@@ -12,12 +12,8 @@ p {
 	text-align: justify;
 	text-indent: 20px;
 }
-.title {
-	font-size: 20px;
-	font-weight: bold;
-}
-.caption {
-	font-size: 15px;
+button {
+	float: right;
 }
 h6 {
 	position: relative;
@@ -27,6 +23,13 @@ h6 {
 }
 i {
 	padding-right: 5px;
+}
+.title {
+	font-size: 20px;
+	font-weight: bold;
+}
+.caption {
+	font-size: 15px;
 }
 .active > a {
 	color: #f5f5f5;
@@ -91,6 +94,7 @@ li.active {
 	color: white;
 }
 .logo {
+	width: 40%;
 	top: 20px;
 }
 table {
@@ -117,6 +121,7 @@ li > a:hover {
 }
 #img {
 	width: 50%;
+	max-width: 450px;
 	float: right;
 }
 tr {
@@ -166,9 +171,6 @@ input:focus, textarea:focus {
 	min-height: 0px !important;
     margin-bottom: 0px !important;
     border: none !important;
-}
-button {
-	float: right;
 }
 #send-res {
 	height: 14px;
@@ -231,8 +233,12 @@ section {
 	}
 	#img {
 		width: 100%;
+		max-width: none;
 	}
 	.inn {
 		margin-top: 0px;
+	}
+	.logo {
+		width: 50%;
 	}
 }

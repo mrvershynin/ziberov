@@ -18,13 +18,14 @@
     }
 
 })();
-
 $('document').ready(function() {
     $('#footer').load('footer.html');
-    $('#header').load('header.html');
+});
+
+//SEND EMAIL BRAZIL version
+$('document').ready(function() {
     $('.send').on('click', validateForm);
 
-    //SEND EMAIL IN DESKTOP VERSION
     function validateForm() {
         var email_test = $('#email').val();
         var filter = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
@@ -39,57 +40,81 @@ $('document').ready(function() {
                 ifSuccess
             );
         } else {
-            $('#send-res').html('Por favor, insira um e-mail válido.').css({ "color": "red", "font-size": "14px" });
+            $('#send-res').html('Verifique os dados inseridos!').css({ "color": "red", "font-size": "14px" });
         }
     }
-
 
     function ifSuccess(data) {
         if (data == 1) {
-            $('#send-res').html('Message sent successfully!');
-            $('#resultModal').modal('show');
-            setTimeout(function() {
-                $('#resultModal').modal('hide');
-            }, 3000);
+            $('#send-res').html('Mensagem enviada com sucesso!').css({ "color": "red", "font-size": "14px" });
             $('#email, #name, #comment').val('');
         } else {
-            $('#send-res').html('Check the entered data.');
-            $('#resultModal').modal('show');
+            $('#send-res').html('Verifique os dados inseridos!').css({ "color": "red", "font-size": "14px" });
         }
     }
 });
 
+//SEND EMAIL ENGLISH version
+$('document').ready(function() {
+    $('.send-en').on('click', validateForm);
 
+    function validateForm() {
+        var email_test = $('#email').val();
+        var filter = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
+        if (filter.test(email_test)) {
+            $.get(
+                "message.php", {
+                    "email": $('#email').val(),
+                    "name": $('#name').val(),
+                    "tel": $('#telephone').val(),
+                    "msg": $('#comment').val()
+                },
+                ifSuccess
+            );
+        } else {
+            $('#send-res').html('Check the entered data!').css({ "color": "red", "font-size": "14px" });
+        }
+    }
 
-
-
-//Animation for mobile menu
-/*
-var mmenu='close';
-
-$('document').ready(function(){
-  $('.cmn-toggle-switch').on('click', showMmenu);
+    function ifSuccess(data) {
+        if (data == 1) {
+            $('#send-res').html('Message sent successfully!').css({ "color": "red", "font-size": "14px" });
+            $('#email, #name, #telephone, #comment').val('');
+        } else {
+            $('#send-res').html('Check the entered data!').css({ "color": "red", "font-size": "14px" });
+        }
+    }
 });
 
-function showMmenu (){
-  if (mmenu == 'close') {
-    $('.mmenu').animate({
-    'top': '0'
-  },1000);
-  mmenu = 'open';
+//SEND EMAIL RUSSIAN version
+$('document').ready(function() {
+    $('.send-ru').on('click', validateForm);
 
-  $('.mmenu-menu').fadeOut(1000);
-  $('.mmenu-close').fadeIn(1000);
-}
+    function validateForm() {
+        var email_test = $('#email').val();
+        var filter = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
+        if (filter.test(email_test)) {
+            $.get(
+                "message.php", {
+                    "email": $('#email').val(),
+                    "name": $('#name').val(),
+                    "tel": $('#telephone').val(),
+                    "msg": $('#comment').val()
+                },
+                ifSuccess
+            );
+        } else {
+            $('#send-res').html('Проверьте введенные данные!').css({ "color": "red", "font-size": "14px" });
+        }
+    }
 
-else {
-  
-  $('.mmenu').animate({
-    'top': '-30%'
-  },1000);
-  mmenu = 'close';
-  $('.mmenu-menu').fadeIn(1000);
-  $('.mmenu-close').fadeOut(1000);
-}
-}
-*/
+    function ifSuccess(data) {
+        if (data == 1) {
+            $('#send-res').html('Сообщение успешно отправлено!').css({ "color": "red", "font-size": "14px" });
+            $('#email, #name, #comment').val('');
+        } else {
+            $('#send-res').html('Проверьте введенные данные!').css({ "color": "red", "font-size": "14px" });
+        }
+    }
+});
+

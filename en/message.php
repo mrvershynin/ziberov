@@ -7,7 +7,7 @@ $name = trim($_GET["name"]);
 $tel = trim($_GET['tel']);
 $msg = trim($_GET["msg"]);
 
-if ($name!='' and $email!='' and $tel!='' and $msg!='') {
+if ($name!='' and $email!='' and $msg!='') {
     $message = "$email $name $tel $msg";
     $res = mail($recepient, 'You letter from UTEC', $message);
     if ($res) {
