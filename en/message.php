@@ -1,5 +1,5 @@
 <?php
-$recepient = "mrvershynin@gmail.com";
+$recepient = "utec.engenharia@hotmail.com";
 $sitename = "UTEC";
 
 $email = trim($_GET["email"]);
