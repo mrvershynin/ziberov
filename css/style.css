@@ -96,6 +96,7 @@ li.active {
 .logo {
 	width: 40%;
 	top: 20px;
+	min-width: 300px;
 }
 table {
 	margin-left: 5px;
@@ -104,6 +105,8 @@ table {
   display: table;
   width: 100%;
   height: 100%;
+  margin: 0 auto;
+  max-width: 1500px;
 }
 .content {
   display: table-row;
@@ -240,5 +243,6 @@ section {
 	}
 	.logo {
 		width: 50%;
+		min-width: 250px;
 	}
 }
