@@ -46,7 +46,7 @@ $('document').ready(function() {
 
     function ifSuccess(data) {
         if (data == 1) {
-            $('#send-res').html('Mensagem enviada com sucesso!').css({ "color": "red", "font-size": "14px" });
+            $('#send-res').html('Mensagem enviada com sucesso!').css({ "color": "green", "font-size": "14px" });
             $('#email, #name, #comment').val('');
         } else {
             $('#send-res').html('Verifique os dados inseridos!').css({ "color": "red", "font-size": "14px" });
@@ -78,7 +78,7 @@ $('document').ready(function() {
 
     function ifSuccess(data) {
         if (data == 1) {
-            $('#send-res').html('Message sent successfully!').css({ "color": "red", "font-size": "14px" });
+            $('#send-res').html('Message sent successfully!').css({ "color": "green", "font-size": "14px" });
             $('#email, #name, #telephone, #comment').val('');
         } else {
             $('#send-res').html('Check the entered data!').css({ "color": "red", "font-size": "14px" });
@@ -110,7 +110,7 @@ $('document').ready(function() {
 
     function ifSuccess(data) {
         if (data == 1) {
-            $('#send-res').html('Сообщение успешно отправлено!').css({ "color": "red", "font-size": "14px" });
+            $('#send-res').html('Сообщение успешно отправлено!').css({ "color": "green", "font-size": "14px" });
             $('#email, #name, #comment').val('');
         } else {
             $('#send-res').html('Проверьте введенные данные!').css({ "color": "red", "font-size": "14px" });
